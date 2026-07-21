@@ -1,8 +1,7 @@
-// --- Placeholder contacts: replace when Telegram username and phone are ready ---
 const CONTACTS = {
-  phone: "+380 (00) 000-00-00",
-  phoneHref: "tel:+380000000000",
-  telegram: "https://t.me/skladwork_hr",
+  phone: "+38 (075) 906-67-72",
+  phoneHref: "tel:+380759066772",
+  telegram: "https://t.me/hub_warehouse",
 };
 
 document.querySelectorAll("[id^='contact-phone'], #header-phone").forEach((el) => {
@@ -14,7 +13,7 @@ document.querySelectorAll("[id^='contact-phone'], #header-phone").forEach((el) =
 
 const phoneBtn = document.getElementById("contact-phone");
 if (phoneBtn) {
-  phoneBtn.textContent = `Позвонить: ${CONTACTS.phone}`;
+  phoneBtn.textContent = `Зателефонувати: ${CONTACTS.phone}`;
   phoneBtn.href = CONTACTS.phoneHref;
 }
 
