@@ -104,6 +104,14 @@ h1, h2, h3 { margin: 0; }
   object-fit: cover;
 }
 .logo--footer .logo__img { height: 56px; width: 56px; }
+.logo__text {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.logo__text span { color: var(--orange); font-weight: 700; }
+.logo--footer .logo__text { color: #fff; font-size: 22px; }
 .nav {
   display: flex;
   gap: 28px;
@@ -415,6 +423,7 @@ h1 {
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .nav, .header__phone { display: none; }
+  .header .logo__text span { display: none; }
   .burger { display: flex; }
   .nav.is-open {
     display: flex;
